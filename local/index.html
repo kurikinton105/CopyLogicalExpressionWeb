@@ -1,28 +1,35 @@
-<link rel="stylesheet" type="text/css" href="textbox.css">
-<script src=""
+<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="_static/style.css">
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
 		<title>数理論理式を簡単に記述できるページ</title>
-	</head>
-	<body>
-		<script>
-			//alert("Hello World")
-			document.write("こんにちは！！<br>")
-		</script>
 
+		<script language="javascript" type="text/javascript">
+			alert("Hello World");
+			console.log('GitHub Pages Sample');
+
+		</script>
+	</head>
+	<body onload = "alert()"">
 		<H1>数理論理式を簡単に記述できるページ</H1>
 		<div class="cp_iptxt">
 			<input type="text" placeholder="ここにコードを記載">
 			<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
 		</div>
+		<div id="text-button"><p id="text">クリック</p></div>
 
 		<button class="kadomaru">角丸のボタン</button>
 		<br>
-		<button class="shadow">立体のボタン</button>
-
-
+		<button class="shadow" >立体のボタン</button>
+		<input type="button" value="(ボタンのキャプション)" onclick="OnButtonClick()"/>
+		<br>
+		<div id="output"></div>
+		<br>
+		<br>
 		<a href="#" class="cp_btn"><span>button</span></a>
+		<input type="text" id="txt1" value="hoge">
+		<input type="button" value="ボタン" onclick="getValue('txt1');">
 	</body>
 </html>
