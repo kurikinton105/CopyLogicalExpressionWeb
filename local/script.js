@@ -1,5 +1,5 @@
 function start(){
-
+  var count = 0
 };
 
 function copy(){
@@ -12,16 +12,13 @@ function alert(){
 document.getElementById("text-button").onclick = function() {
   document.getElementById("text").innerHTML = "クリックされた！";
 };
-var count = 0;
-function OnButtonClick() {
 
+function OnButtonClick(idname) {
+  var count = 0;
   target = document.getElementById("output");
-  target.innerHTML = "打てました！！";
+  var getresult = document.getElementById(idname).value;
+  target.innerHTML = "打てました！！"+ "π " + count+  " "+ getresult;
+  document.sample.value = getresult;
+  //document.form_003.textBox_003.value = text;
   count += 1;
 };
-function getValue(idname){
-	// value値を取得する
-	var result = document.getElementById(idname).value;
-	// Alertで表示する
-	alert("value値は「" + result + "」です");
-  }

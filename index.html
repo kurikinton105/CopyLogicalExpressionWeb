@@ -9,27 +9,43 @@
 		<script language="javascript" type="text/javascript">
 			alert("Hello World");
 			console.log('GitHub Pages Sample');
-
 		</script>
-	</head>
-	<body onload = "alert()"">
-		<H1>数理論理式を簡単に記述できるページ</H1>
-		<div class="cp_iptxt">
-			<input type="text" placeholder="ここにコードを記載">
-			<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-		</div>
-		<div id="text-button"><p id="text">クリック</p></div>
 
-		<button class="kadomaru">角丸のボタン</button>
-		<br>
-		<button class="shadow" >立体のボタン</button>
-		<input type="button" value="(ボタンのキャプション)" onclick="OnButtonClick()"/>
-		<br>
-		<div id="output"></div>
-		<br>
-		<br>
-		<a href="#" class="cp_btn"><span>button</span></a>
-		<input type="text" id="txt1" value="hoge">
-		<input type="button" value="ボタン" onclick="getValue('txt1');">
+	</head>
+	<body>
+		<div class = "parent">
+			あいうエオ
+			<div class="inner">
+				abcdefg
+
+				<H1>数理論理式を簡単に記述できるページ</H1>
+
+				<div class="cp_iptxt">
+					<input type="text" name ="textbox" placeholder="ここにコードを記載">
+					<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+				</div>
+
+				<div class ="btnList">
+					<button class="kadomaru">角丸のボタン</button>
+					<div id="text-button"><p id="text">クリック</p></div>
+				</div>
+
+				<div id="text-button"><p id="text">クリック</p></div>
+
+				<button class="kadomaru" onclick="OnButtonClick('txt1')">角丸のボタン</button>
+				<br>
+				<button class="shadow" >立体のボタン</button>
+				<input type="button" value="(ボタンのキャプション)" onclick="OnButtonClick('txt1')"/>
+				<br>
+				<div id="output"></div>
+				<br>
+				<input type="text" id="txt1" value="hoge">
+				<input type="button" name= "sample" value="ボタン" onclick="OnButtonClick('txt1')">
+				<div id="output2"></div>
+				<br>
+				<a href="#" class="cp_btn"><span>button</span></a>
+
+				</div>
+		</div>
 	</body>
 </html>

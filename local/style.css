@@ -1,7 +1,19 @@
+.parent{
+	margin: 0 auto;
+	text-align:center;
+	border:solid 1px rgb(0, 0, 0);
+}
+.inner{
+	border:solid 1px #100;
+}
+
+.btnList{
+	border:solid 1px #100;
+}
 .cp_iptxt {
-	position: relative;
+
 	width: 27.33%;
-	margin: 40px 3%;
+	margin: 0 auto;
 }
 .cp_iptxt input[type='text'] {
 	font: 15px/24px sans-serif;
@@ -25,7 +37,7 @@
 	left: 0;
 	padding: 9px 5px;
 	transition: 0.3s;
-	color: #aaaaaa;
+	color: rgb(3, 111, 235);
 }
 .cp_iptxt::after {
 	display: block;
@@ -40,13 +52,13 @@
 
 /* 角丸 */
 .kadomaru {
-	width:100px;
+	margin: 0 auto;
 	font-size:12px;
-	color:#FFFFFF;
+	color:rgb(3, 111, 235);
 	text-align:center;
 	display:block;
 	padding:10px 0 10px;
-	background:#6BCBF6;
+	background: #ffffff;;
 	border-radius: 20px;
   }order-radius: 20px;
 }
