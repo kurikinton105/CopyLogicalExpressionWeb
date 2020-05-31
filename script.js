@@ -9,12 +9,9 @@ function alert(){
   alert("Hello world");
   document.write("こんにちは！！<br>");
 };
-document.getElementById("text-button").onclick = function() {
-  document.getElementById("text").innerHTML = "クリックされた！";
-};
 
+// ボタンをクリックした時の反応
 function OnButtonClick(idname,name) {
-  var count = 0;
   target = document.getElementById("output");
 
   var getresult = document.getElementById(idname).value; //値の取得
@@ -23,3 +20,24 @@ function OnButtonClick(idname,name) {
   inputform.input_txt.value=text; //フォームに表示
 
 };
+
+function ClearOnButtonClick(idname){
+  var text = "";
+  inputform.input_txt.value=text; //フォームに表示
+  //結果のクリア
+  target = document.getElementById("outputCopy");
+  target.innerHTML = "";
+}
+
+//クリップボードにテキストをコピー
+function CopyOnButtonClick(idname){
+  var getresult = document.getElementById(idname).value; //値の取得
+  //var textarea = document.getElementsByTagName(idname)[0];
+  target = document.getElementById("outputCopy");
+  //コピー
+  input_txt.select();
+  document.execCommand("copy");
+
+  target.innerHTML = getresult + "　をコピーしました！";
+};
+
