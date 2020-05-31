@@ -25,8 +25,8 @@ function ClearOnButtonClick(idname){
   var text = "";
   inputform.input_txt.value=text; //フォームに表示
   //結果のクリア
-  target = document.getElementById("outputCopy");
-  target.innerHTML = "";
+  //target = document.getElementById("outputCopy");
+  //target.innerHTML = "";
 }
 
 //クリップボードにテキストをコピー
