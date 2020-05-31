@@ -1,5 +1,5 @@
-<script src="script.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
+<script src="../script.js"></script>
+<link rel="stylesheet" type="text/css" href="../style.css">
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
@@ -7,45 +7,84 @@
 		<title>数理論理式を簡単に記述できるページ</title>
 
 		<script language="javascript" type="text/javascript">
-			alert("Hello World");
-			console.log('GitHub Pages Sample');
+			//alert("Hello World");
+			//console.log('GitHub Pages Sample');
 		</script>
 
 	</head>
 	<body>
 		<div class = "parent">
-			あいうエオ
 			<div class="inner">
-				abcdefg
-
+				<br>
+				<br>
 				<H1>数理論理式を簡単に記述できるページ</H1>
 
 				<div class="cp_iptxt">
-					<input type="text" name ="textbox" placeholder="ここにコードを記載">
-					<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+					<form name = "inputform">
+						<input type="text" name ="textbox" id="input_txt" placeholder="ここにコードを記載" >
+						<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+					</form>
 				</div>
+				<div class ="space"></div>
+				<!--　ボタン（文字は７文字！） -->
+				<div class ="btnList">
+					<li><button class="kadomaru" onclick="OnButtonClick('input_txt','∧')">　　　 ∧ 　　　</button></li>
+					<li>&nbsp;</li>
+					<li><button class="kadomaru" onclick="OnButtonClick('input_txt','∨')">　　　 ∨ 　　　</button></li>
+					<li>&nbsp;</li>
+					<li><button class="kadomaru" onclick="OnButtonClick('input_txt','¬')">　　　 ¬ 　　　</button></li>
+					<li>&nbsp;</li>
+				</div>
+
+				<div class ="space"></div>
+				<div class ="btnList">
+					<li><button class="kadomaru" onclick="OnButtonClick('input_txt','→')">　　　 → 　　　</button></li>
+					<li>&nbsp;</li>
+					<li><button class="kadomaru" onclick="OnButtonClick('input_txt','≡')">　　　 ≡ 　　　</button></li>
+					<li>&nbsp;</li>
+					<li><button class="kadomaru" onclick="OnButtonClick('input_txt','≢')">　　　 ≢ 　　　</button></li>
+					<li>&nbsp;</li>
+				</div>
+				<div class ="space"></div>
 
 				<div class ="btnList">
-					<button class="kadomaru">角丸のボタン</button>
-					<div id="text-button"><p id="text">クリック</p></div>
+					<li><button class="kadomaru" onclick="OnButtonClick('input_txt','∃')">　　　 ∃ 　　　</button></li>
+					<li>&nbsp;</li>
+					<li><button class="kadomaru" onclick="OnButtonClick('input_txt','φ')">　　　 φ 　　　</button></li>
+					<li>&nbsp;</li>
+					<li><button class="kadomaru" onclick="OnButtonClick('input_txt','η')">　　　 η 　　　</button></li>
+					<li>&nbsp;</li>
+				</div>
+				<div class ="space"></div>
+
+				<!-- ここまでボタン領域-->
+				<div class = "changeBtn">
+					<li><button class="kadomaru" onclick="CopyOnButtonClick('input_txt')">　　コピー　　</button></li>
+					<li>&nbsp;&nbsp;&nbsp;</li>
+					<li><button class="kadomaru" onclick="ClearOnButtonClick('input_txt')">　　clear　　</button></li>
 				</div>
 
-				<div id="text-button"><p id="text">クリック</p></div>
-
-				<button class="kadomaru" onclick="OnButtonClick('txt1')">角丸のボタン</button>
-				<br>
-				<button class="shadow" >立体のボタン</button>
-				<input type="button" value="(ボタンのキャプション)" onclick="OnButtonClick('txt1')"/>
-				<br>
+				<!-- <div id="text-button"><p id="text">クリック</p></div> -->
+				<!--<br>
+				<button class="shadow" >立体のボタン</button> -->
+				<!-- <input type="button" value="(ボタンのキャプション)" onclick="OnButtonClick('txt1')"/>
+				<br> -->
+				<!---
 				<div id="output"></div>
 				<br>
-				<input type="text" id="txt1" value="hoge">
+				<form name = "myform">
+					<input type="text" id="txt1" value="hoge">
+				</form>
 				<input type="button" name= "sample" value="ボタン" onclick="OnButtonClick('txt1')">
 				<div id="output2"></div>
 				<br>
-				<a href="#" class="cp_btn"><span>button</span></a>
-
+				-->
+				<!-- <a href="#" class="cp_btn"><span>button</span></a> -->
 				</div>
 		</div>
 	</body>
+	<div class = "pageinfo">
+		created by
+		<a href="https://twitter.com/y_a_m_a_y_a">@y_a_m_a_y_a</a>
+	</div>
 </html>

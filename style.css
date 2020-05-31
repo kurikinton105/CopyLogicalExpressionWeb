@@ -1,20 +1,36 @@
 .parent{
 	margin: 0 auto;
 	text-align:center;
-	border:solid 1px rgb(0, 0, 0);
+	/*border:solid 1px rgb(0, 0, 0);*/
 }
 .inner{
-	border:solid 1px #100;
+	/*border:solid 1px #100;*/
 }
-
+/*ボタンのリスト*/
 .btnList{
-	border:solid 1px #100;
+	/*border:solid 1px rgb(83, 224, 13);*/
+	text-align: center;
 }
-.cp_iptxt {
+.btnList li{
+	display: inline-block;
+	letter-spacing:0em;
+}
+/*クリアとコピーボタン*/
+.changeBtn{
+	text-align: center;
+}
 
-	width: 27.33%;
+.changeBtn li{
+	display: inline-block;
+	letter-spacing:0em;
+}
+
+/* text部分 */
+.cp_iptxt {
+	width: 35.33%;
 	margin: 0 auto;
 }
+
 .cp_iptxt input[type='text'] {
 	font: 15px/24px sans-serif;
 	box-sizing: border-box;
@@ -50,6 +66,7 @@
 	border-color: #da3c41;
 }
 
+
 /* 角丸 */
 .kadomaru {
 	margin: 0 auto;
@@ -58,10 +75,10 @@
 	text-align:center;
 	display:block;
 	padding:10px 0 10px;
-	background: #ffffff;;
+	background:#FFFFFF;
 	border-radius: 20px;
-  }order-radius: 20px;
 }
+
 
 .shadow {
 	width:100px;
@@ -102,3 +119,12 @@ a.cp_btn:hover span {
 	text-align: center;
 	border: 1px solid #232323;
   }
+
+.space{
+	padding: 15px;
+}
+
+/*page info(左寄せ)*/
+.pageinfo{
+	text-align: right;
+}
