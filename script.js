@@ -15,7 +15,7 @@ function OnButtonClick(idname,name) {
   target = document.getElementById("output");
 
   var getresult = document.getElementById(idname).value; //値の取得
-  var text = getresult + " "+name +" ";
+  var text = getresult + ""+name +"";
   //target.innerHTML = text;
   inputform.input_txt.value=text; //フォームに表示
 
